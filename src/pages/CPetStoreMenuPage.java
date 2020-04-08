@@ -25,15 +25,15 @@ public class CPetStoreMenuPage extends APageTemplate {
 	public WebElement getSignIn() {
 		return this.driver.findElement(By.xpath(this.locators.getProperty("c_sign_in")));
 	}
-	
+
 	public void signIn() {
 		this.getSignIn().click();
 	}
-	
+
 	public WebElement getLoginButton() {
 		return this.driver.findElement(By.xpath(this.locators.getProperty("d_login_button")));
 	}
-	
+
 	public boolean onSignInPage() {
 		return this.getLoginButton().isDisplayed();
 	}
@@ -52,11 +52,11 @@ public class CPetStoreMenuPage extends APageTemplate {
 		List<WebElement> categories = this.driver.findElements(By.xpath(this.locators.getProperty("c_menu_m")));
 		return categories;
 	}
-	
+
 	public WebElement getCategoryName() {
 		return this.driver.findElement(By.xpath(this.locators.getProperty("c_text")));
 	}
-	
+
 	public void clickMapCategories() throws InterruptedException {
 		for (int i = 0; i < this.getMapCategories().size(); i++) {
 			this.getMapCategories().get(i).click();
@@ -73,7 +73,7 @@ public class CPetStoreMenuPage extends APageTemplate {
 		}
 		return categories;
 	}
-	
+
 	public List<String> returnListVerticalCategories() {
 		List<String> categories = new ArrayList<>();
 		for (int i = 0; i < this.getVerticalCategories().size(); i++) {
@@ -83,7 +83,7 @@ public class CPetStoreMenuPage extends APageTemplate {
 		}
 		return categories;
 	}
-	
+
 	public List<String> returnListMapCategories() {
 		List<String> categories = new ArrayList<>();
 		for (int i = 0; i < this.getMapCategories().size(); i++) {
@@ -93,7 +93,7 @@ public class CPetStoreMenuPage extends APageTemplate {
 		}
 		return categories;
 	}
-	
+
 	public List<WebElement> getTopMenu() {
 		List<WebElement> categories = this.driver.findElements(By.xpath(this.locators.getProperty("c_top_menu")));
 		return categories;

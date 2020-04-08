@@ -20,6 +20,7 @@ public class ATestTemplate {
 
 	@BeforeClass
 	public void setup() throws FileNotFoundException, IOException {
+
 		System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		this.locators = new Properties();
@@ -32,7 +33,9 @@ public class ATestTemplate {
 
 	@AfterClass
 	public void afterClass() {
+
 		this.driver.close();
+
 	}
 
 }

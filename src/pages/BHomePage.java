@@ -20,7 +20,7 @@ public class BHomePage extends APageTemplate {
 	public void enterStore() {
 		this.getEnter().click();
 	}
-	
+
 	public WebElement getLogo() {
 		return this.driver.findElement(By.xpath(this.locators.getProperty("c_logo")));
 	}

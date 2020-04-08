@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23839" started-at="2020-04-05T23:53:51 CEST" finished-at="2020-04-05T23:54:15 CEST">
+  <suite name="Default suite" duration-ms="17653" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:59 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23839" started-at="2020-04-05T23:53:51 CEST" finished-at="2020-04-05T23:54:15 CEST">
-      <class name="tests.CPetStoreMenuTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CPetStoreMenuTest@35d176f7]" name="setup" is-config="true" duration-ms="12027" started-at="2020-04-05T23:53:51 CEST" finished-at="2020-04-05T23:54:03 CEST">
+    <test name="Default test" duration-ms="17653" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:59 CEST">
+      <class name="tests.DSignInTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.DSignInTest@35d176f7]" name="setup" is-config="true" duration-ms="11750" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:54 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyClicksOnCategories()[pri:0, instance:tests.CPetStoreMenuTest@35d176f7]" name="verifyClicksOnCategories" duration-ms="7885" started-at="2020-04-05T23:54:03 CEST" finished-at="2020-04-05T23:54:11 CEST">
+        <test-method status="PASS" signature="testingUserRegistration()[pri:0, instance:tests.DSignInTest@35d176f7]" name="testingUserRegistration" duration-ms="5847" started-at="2020-04-08T09:25:54 CEST" finished-at="2020-04-08T09:25:59 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClicksOnCategories -->
-        <test-method status="PASS" signature="verifyLinksInAllMenus()[pri:0, instance:tests.CPetStoreMenuTest@35d176f7]" name="verifyLinksInAllMenus" duration-ms="3038" started-at="2020-04-05T23:54:11 CEST" finished-at="2020-04-05T23:54:14 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLinksInAllMenus -->
-        <test-method status="PASS" signature="verifyPathToSignInPage()[pri:0, instance:tests.CPetStoreMenuTest@35d176f7]" name="verifyPathToSignInPage" duration-ms="530" started-at="2020-04-05T23:54:14 CEST" finished-at="2020-04-05T23:54:15 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPathToSignInPage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.CPetStoreMenuTest@35d176f7]" name="afterClass" is-config="true" duration-ms="303" started-at="2020-04-05T23:54:15 CEST" finished-at="2020-04-05T23:54:15 CEST">
+        </test-method> <!-- testingUserRegistration -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.DSignInTest@35d176f7]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-08T09:25:59 CEST" finished-at="2020-04-08T09:25:59 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- tests.CPetStoreMenuTest -->
+      </class> <!-- tests.DSignInTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,39 +31,39 @@ public class CPetStoreMenuTest extends ATestTemplate {
 		sa.assertTrue(mapMenu, "Verification failed for Map Menu");
 
 		sa.assertAll();
-		
+
 	}
-	
+
 	@Test
-	public void verifyClicksOnCategories() throws InterruptedException {
-		
+	public void testingClicksOnCategories() throws InterruptedException {
+
 		driver.navigate().to(this.locators.getProperty("c_url"));
-				
+
 		CPetStoreMenuPage ps = new CPetStoreMenuPage(driver, locators, waiter);
-		
-		List<String> categoriesHorizontalGuess = 
-				new ArrayList<> (Arrays.asList("Fish", "Dogs", "Reptiles", "Cats", "Birds"));
-		List<String> categoriesVerticalGuess = 
-				new ArrayList<> (Arrays.asList("Fish", "Dogs", "Cats", "Reptiles", "Birds"));
-		List<String> categoriesMapGuess = 
-				new ArrayList<> (Arrays.asList("Birds", "Fish", "Dogs", "Reptiles", "Cats", "Birds"));
-	
+
+		List<String> categoriesHorizontalGuess = new ArrayList<>(
+				Arrays.asList("Fish", "Dogs", "Reptiles", "Cats", "Birds"));
+		List<String> categoriesVerticalGuess = new ArrayList<>(
+				Arrays.asList("Fish", "Dogs", "Cats", "Reptiles", "Birds"));
+		List<String> categoriesMapGuess = new ArrayList<>(
+				Arrays.asList("Birds", "Fish", "Dogs", "Reptiles", "Cats", "Birds"));
 
 		Assert.assertTrue(categoriesHorizontalGuess.equals(ps.returnListHorizontalCategories()));
 		Assert.assertTrue(categoriesVerticalGuess.equals(ps.returnListVerticalCategories()));
 		Assert.assertTrue(categoriesMapGuess.equals(ps.returnListMapCategories()));
 
 	}
-	
+
 	@Test
-	public void verifyPathToSignInPage() throws InterruptedException {
+	public void testingPathToSignInPage() throws InterruptedException {
 
 		driver.navigate().to(this.locators.getProperty("c_url"));
-		
+
 		CPetStoreMenuPage ps = new CPetStoreMenuPage(driver, locators, waiter);
 		ps.signIn();
 
 		Assert.assertTrue(ps.onSignInPage());
 
 	}
+
 }

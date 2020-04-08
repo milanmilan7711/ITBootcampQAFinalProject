@@ -16,6 +16,7 @@ public class BEnterStoreTest extends ATestTemplate {
 		hp.enterStore();
 
 		Assert.assertTrue(hp.inStore());
+		
 	}
 
 }
