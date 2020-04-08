@@ -1,5 +1,6 @@
 package pages;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -25,7 +26,31 @@ public class GCartPage extends APageTemplate {
 	public WebElement getProceedButton() {
 		return this.driver.findElement(By.xpath(this.locators.getProperty("g_proceed_button")));
 	}
-
+	
+	public List<WebElement> getItemsId() {
+		return this.driver.findElements(By.xpath(this.locators.getProperty("g_items_id")));
+	}
+	
+	public List<String> returnListItemsId() {
+		List<String> itemIDs = new ArrayList<>();
+		for (int i = 0; i < this.getItemsId().size(); i++) {
+			itemIDs.add(this.getItemsId().get(i).getText());
+		}
+		return itemIDs;
+	}
+	
+	public List<WebElement> getItemsPrice() {
+		return this.driver.findElements(By.xpath(this.locators.getProperty("g_items_price")));
+	}
+	
+	public List<String> returnItemsPrice() {
+		List<String> itemPrice = new ArrayList<>();
+		for (int i = 0; i < this.getItemsPrice().size(); i++) {
+			itemPrice.add(this.getItemsPrice().get(i).getText());
+		}
+		return itemPrice;
+	}
+	
 	public void clickProceedButton() {
 		this.getProceedButton().click();
 	}

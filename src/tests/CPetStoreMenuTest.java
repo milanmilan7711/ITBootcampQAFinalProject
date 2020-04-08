@@ -35,7 +35,7 @@ public class CPetStoreMenuTest extends ATestTemplate {
 	}
 
 	@Test
-	public void testingClicksOnCategories() throws InterruptedException {
+	public void categoriesLinksRightPath() throws InterruptedException {
 
 		driver.navigate().to(this.locators.getProperty("c_url"));
 
@@ -55,7 +55,7 @@ public class CPetStoreMenuTest extends ATestTemplate {
 	}
 
 	@Test
-	public void testingPathToSignInPage() throws InterruptedException {
+	public void pathToSignInPage() throws InterruptedException {
 
 		driver.navigate().to(this.locators.getProperty("c_url"));
 

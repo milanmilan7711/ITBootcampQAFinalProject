@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17653" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:59 CEST">
+  <suite name="Default suite" duration-ms="18239" started-at="2020-04-08T21:20:59 CEST" finished-at="2020-04-08T21:21:17 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17653" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:59 CEST">
-      <class name="tests.DSignInTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.DSignInTest@35d176f7]" name="setup" is-config="true" duration-ms="11750" started-at="2020-04-08T09:25:42 CEST" finished-at="2020-04-08T09:25:54 CEST">
+    <test name="Default test" duration-ms="18239" started-at="2020-04-08T21:20:59 CEST" finished-at="2020-04-08T21:21:17 CEST">
+      <class name="tests.GCartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GCartTest@35d176f7]" name="setup" is-config="true" duration-ms="11087" started-at="2020-04-08T21:20:59 CEST" finished-at="2020-04-08T21:21:10 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testingUserRegistration()[pri:0, instance:tests.DSignInTest@35d176f7]" name="testingUserRegistration" duration-ms="5847" started-at="2020-04-08T09:25:54 CEST" finished-at="2020-04-08T09:25:59 CEST">
+        <test-method status="PASS" signature="cartAllItemsIn()[pri:1, instance:tests.GCartTest@35d176f7]" name="cartAllItemsIn" duration-ms="6738" started-at="2020-04-08T21:21:10 CEST" finished-at="2020-04-08T21:21:17 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testingUserRegistration -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.DSignInTest@35d176f7]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-04-08T09:25:59 CEST" finished-at="2020-04-08T09:25:59 CEST">
+        </test-method> <!-- cartAllItemsIn -->
+        <test-method status="PASS" signature="isCartEmptyWithoutCookies()[pri:2, instance:tests.GCartTest@35d176f7]" name="isCartEmptyWithoutCookies" duration-ms="358" started-at="2020-04-08T21:21:17 CEST" finished-at="2020-04-08T21:21:17 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCartEmptyWithoutCookies -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.GCartTest@35d176f7]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-08T21:21:17 CEST" finished-at="2020-04-08T21:21:17 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- tests.DSignInTest -->
+      </class> <!-- tests.GCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

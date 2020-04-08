@@ -8,7 +8,7 @@ import pages.BHomePage;
 public class BEnterStoreTest extends ATestTemplate {
 
 	@Test
-	public void EnterStoreTest() throws InterruptedException {
+	public void enterStoreTest() throws InterruptedException {
 
 		driver.navigate().to(this.locators.getProperty("b_url"));
 
@@ -16,7 +16,7 @@ public class BEnterStoreTest extends ATestTemplate {
 		hp.enterStore();
 
 		Assert.assertTrue(hp.inStore());
-		
+
 	}
 
 }

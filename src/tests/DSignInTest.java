@@ -12,7 +12,7 @@ import utils.ExcelUtils;
 public class DSignInTest extends ATestTemplate {
 
 	@Test
-	public void testingUserRegistration() throws InterruptedException {
+	public void testingUserSignIn() throws InterruptedException {
 
 		SoftAssert sa = new SoftAssert();
 
@@ -22,7 +22,7 @@ public class DSignInTest extends ATestTemplate {
 		petStoreData.setExcell("data/pet-store-data.xlsx");
 		petStoreData.setWorkSheet(1);
 
-		for (int i = 1; i < 5; i++) {
+		for (int i = 1; i < petStoreData.getRowNumber(); i++) {
 
 			driver.navigate().to(this.locators.getProperty("d_url"));
 
@@ -38,7 +38,7 @@ public class DSignInTest extends ATestTemplate {
 		petStoreData.closeExcell();
 
 		sa.assertAll();
-		
+
 	}
 
 }

@@ -12,7 +12,7 @@ import utils.ExcelUtils;
 public class ERegistrationPageTest extends ATestTemplate {
 
 	@Test(priority = 1)
-	public void testingUserRegistration() throws InterruptedException {
+	public void userRegistration() throws InterruptedException {
 
 		SoftAssert sa = new SoftAssert();
 
@@ -53,7 +53,7 @@ public class ERegistrationPageTest extends ATestTemplate {
 	}
 
 	@Test(priority = 2)
-	public void testingNewInputUserRegistration() throws InterruptedException {
+	public void newInputUserRegistration() throws InterruptedException {
 
 		SoftAssert sa = new SoftAssert();
 
@@ -75,21 +75,21 @@ public class ERegistrationPageTest extends ATestTemplate {
 		String firstName = s.next();
 		System.out.print("Enter last name: ");
 		String lastName = s.next();
-		System.out.print("Enter email name: ");
+		System.out.print("Enter email: ");
 		String email = s.next();
-		System.out.print("Enter phone name: ");
+		System.out.print("Enter phone: ");
 		String phone = s.next();
-		System.out.print("Enter address1 name: ");
+		System.out.print("Enter address1: ");
 		String address1 = s.next();
-		System.out.print("Enter address2 name: ");
+		System.out.print("Enter address2: ");
 		String address2 = s.next();
-		System.out.print("Enter city name: ");
+		System.out.print("Enter city: ");
 		String city = s.next();
-		System.out.print("Enter state name: ");
+		System.out.print("Enter state: ");
 		String state = s.next();
-		System.out.print("Enter zip name: ");
+		System.out.print("Enter zip: ");
 		String zip = s.next();
-		System.out.print("Enter country name: ");
+		System.out.print("Enter country: ");
 		String country = s.next();
 
 		petStoreData.setDataAt(b, 0, userID);
